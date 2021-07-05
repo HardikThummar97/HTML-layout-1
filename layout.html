@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layyout</title>
+    <style type="text/css">
+    body{
+        width: 90%; margin:auto;
+    }
+    .heading{
+        width: 50%; margin:auto; text-align: center;
+    }
+    .heading h5{
+        color:red;
+    }
+    #blogs{
+        width:100%;
+        margin:auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .blogBox{
+        padding: 1%;
+        margin:auto;
+        flex-basis: 46%;
+    }
+    img.blogImage{
+        width:100%;
+        max-height: 250px;;
+    }
+    .blogBox>h5, .discriptionFonts{
+        color:grey; font-size: 15px; margin-top: 5px;
+    }
+    .blogBox>p, .blogBox>h5{
+        margin: 10px auto;
+    }
+    .button{
+        color: white;
+        padding: 10px;
+        background-color:#FF3300;
+        width:max-content;
+        text-align: center;
+        margin: 30px 45% 100px;
+    }
+    #services{
+        width: 100%; 
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .service h4{
+        margin-bottom: 10px;
+    }
+    .service img{
+        float:left;
+        margin: 25px 10px;
+        width: 12%;
+    }
+    .serviceDiscription{
+        width: 70%;
+        float:left;
+    }
+    @media only screen and (min-width: 720px){
+        #services{
+            grid-template-columns: auto auto;
+        }
+    }
+    @media only screen and (min-width: 992px){
+        #services{
+            grid-template-columns: auto auto auto;
+        }
+    }
+    
+    </style>
+
+</head>
+<body>
+    <div class="heading">
+        <h5>NEWS & UPDATES</h5>
+        <h1>Our Blog Posts</h1>
+    </div>
+
+    <div id="blogs">
+        <div class="blogBox">
+            <img src="https://via.placeholder.com/200x150" class="blogImage">
+            <h5 class="date discriptionFonts">29, jan 2019</h5>
+            <p class="discription">Architectural Art Modern</p>
+        </div>
+        <div class="blogBox">
+            <img src="https://via.placeholder.com/200x150" class="blogImage">
+            <h5 class="date discriptionFonts">29, jan 2019</h5>
+            <p class="discription">Architectural Art Modern</p>
+        </div>
+        <div class="blogBox">
+            <img src="https://via.placeholder.com/200x150" class="blogImage">
+            <h5 class="date discriptionFonts">29, jan 2019</h5>
+            <p class="discription">Architectural Art Modern</p>
+        </div>
+    </div>
+
+    <div class="button">View All Posts</div>
+
+    <div class="heading">
+        <h5>SERVICES</h5>
+        <h1>Our Services</h1>
+        <p class="discriptionFonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sunt quibusdam adipisci dolorum impedit iure?</p>
+    </div>
+
+    <div id="services">
+        <div class="service">
+            <img src="https://via.placeholder.com/140x100" class="logo">
+            <div class="serviceDiscription">
+                <h4>Innovative Structure</h4>
+                <p class="discriptionFonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda?</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/140x100" class="logo">
+            <div class="serviceDiscription">
+                <h4>Innovative Structure</h4>
+                <p class="discriptionFonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda?</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/140x100" class="logo">
+            <div class="serviceDiscription">
+                <h4>Innovative Structure</h4>
+                <p class="discriptionFonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda?</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/140x100" class="logo">
+            <div class="serviceDiscription">
+                <h4>Innovative Structure</h4>
+                <p class="discriptionFonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda?</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/140x100" class="logo">
+            <div class="serviceDiscription">
+                <h4>Innovative Structure</h4>
+                <p class="discriptionFonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda?</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/140x100" class="logo">
+            <div class="serviceDiscription">
+                <h4>Innovative Structure</h4>
+                <p class="discriptionFonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
